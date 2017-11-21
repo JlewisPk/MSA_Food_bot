@@ -1,1 +1,1 @@
-THis is my Food Bot Project
+This is my Food Bot Project
