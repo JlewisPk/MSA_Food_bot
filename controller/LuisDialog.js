@@ -16,7 +16,11 @@ exports.startDialog = function (bot) {
     
     bot.recognizer(recognizer);
 
-
+    bot.dialog('None', function (session, args) {
+        session.send("I don't understand your request!");
+    }).triggerAction({
+        matches: 'None'
+    });
 
     bot.dialog('WelcomeIntent', function (session, args) {
         session.send('WelcomeIntent intent found');
