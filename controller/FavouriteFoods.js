@@ -1,4 +1,4 @@
-var rest = require('../API/RestClient');
+var rest = require('../API/Restclient');
 
 exports.displayFavouriteFood = function getFavouriteFood(session, username){
     var url = 'https://FoodBot1.azurewebsites.net/tables/FoodBot';
